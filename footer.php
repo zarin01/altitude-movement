@@ -14,48 +14,25 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="container">
-		<?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) : ?>
+		<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 			<div class="footer-widgets">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Footer', 'genesis-block-theme' ); ?></h2>
 				<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
 					<div class="footer-column">
-						<?php dynamic_sidebar( 'footer-1' ); ?>
+						<div class="footer-background" >
+							<?php dynamic_sidebar( 'footer-1' ); ?>
+						</div>
 					</div>
 				<?php } ?>
 
-				<?php if ( is_active_sidebar( 'footer-2' ) ) { ?>
-					<div class="footer-column">
-						<?php dynamic_sidebar( 'footer-2' ); ?>
-					</div>
-				<?php } ?>
-
-				<?php if ( is_active_sidebar( 'footer-3' ) ) { ?>
-					<div class="footer-column">
-						<?php dynamic_sidebar( 'footer-3' ); ?>
-					</div>
-				<?php } ?>
 			</div>
 		<?php endif; ?>
 
 		<div class="footer-bottom">
-			<div class="footer-tagline">
-				<div class="site-info">
 					<?php echo genesis_block_theme_filter_footer_text(); ?>
-				</div>
-			</div><!-- .footer-tagline -->
-			<?php if ( has_nav_menu( 'footer' ) ) { ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'genesis-block-theme' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'depth'          => 1,
-							'fallback_cb'    => false,
-						)
-					);
-					?>
-				</nav><!-- .footer-navigation -->
-			<?php } ?>
+					<p class='footer-text'>
+						750 Garden of the Gods Rd, Suite 125, Colorado Springs, CO 80907
+					</p>
 		</div><!-- .footer-bottom -->
 	</div><!-- .container -->
 </footer><!-- #colophon -->

@@ -152,29 +152,6 @@ function genesis_block_theme_widgets_init() {
 		)
 	);
 
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer - Column 2', 'genesis-block-theme' ),
-			'id'            => 'footer-2',
-			'description'   => esc_html__( 'Widgets added here will appear in the center column of the footer.', 'genesis-block-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer - Column 3', 'genesis-block-theme' ),
-			'id'            => 'footer-3',
-			'description'   => esc_html__( 'Widgets added here will appear in the right column of the footer.', 'genesis-block-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>',
-		)
-	);
 }
 add_action( 'widgets_init', 'genesis_block_theme_widgets_init' );
 

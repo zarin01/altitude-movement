@@ -19,7 +19,6 @@ Reset
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	/* stylelint-disable max-line-length */
 	border: 0;
-	font-family: 'Montserrat', sans-serif;
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -157,6 +156,7 @@ h5 {
 h6 {
 	font-size: 1em;
 }
+
 
 
 b,
@@ -311,10 +311,6 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
-img {
-	height: auto;
-	max-width: 100%;
-}
 
 figure {
 	margin: 0;
@@ -1248,7 +1244,6 @@ Menus
 
 .main-navigation ul li a {
 	display: inline-block;
-	margin: 0 0 10px 0;
 	line-height: 2;
 }
 
@@ -1281,6 +1276,7 @@ Menus
 }
 
 .site-identity .main-navigation ul {
+	font-family: 'Oswald', 'Montserrat', sans-serif !important;
 	line-height: 3;
 }
 
@@ -3048,6 +3044,7 @@ body.admin-bar .is-sticky .site-header {
 }
 
 .site-identity {
+	font-family: 'Oswald', 'Montserrat', sans-serif !important;
 	padding: 30px 0;
 	position: relative;
 	z-index: 8;
@@ -3525,8 +3522,8 @@ Footer
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	background: #f2f2f2;
-	color: #272c30;
+	background: #171A1D;
+	color: #FFFFFF;
 }
 
 .site-footer a {
@@ -3694,13 +3691,10 @@ Footer
 }
 
 .footer-bottom {
+	text-align: center;
 	display: inline-block;
 	width: 100%;
 	padding-top: 4%;
-}
-
-.footer-widgets + .footer-bottom {
-	border-top: dotted 1px rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 1000px) {
@@ -3929,7 +3923,7 @@ Page Heading
 	box-sizing: border-box;
 	border: 1.5px solid #FFFFFF;
 	border-radius: 23px;
-	font-family: 'Montserrat';
+	font-family: 'Oswald', 'Montserrat', sans-serif !important;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
@@ -3940,7 +3934,7 @@ Page Heading
 .main-button {
 	box-sizing: border-box;
 	border-radius: 23px;
-	font-family: 'Montserrat';
+	font-family: 'Oswald', 'Montserrat', sans-serif !important;
 	font-style: normal;
 	font-weight: 650;
 	font-size: 15px;
@@ -3966,4 +3960,54 @@ Page Heading
 	background: #253971;
 	border-radius: 25px;
 
+}
+
+.footer-text{
+
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 161.4%;
+	text-align: center;
+
+	color: #FFFFFF;
+
+
+}
+
+
+.footer-background{
+	background-color: #21759b;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-142{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	padding-right: 32px;
+	padding-left: 32px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #3972B2;
+	border-radius: 25px;
+	color: #FFFFFF !important;
+}
+
+.menu-item-142 a{
+	color: #FFFFFF !important;
+}
+
+.bold{
+	font-weight: 900;
+}
+
+.small-text{
+	font-size: 16px;
+}
+
+.blue-background{
+	background-color: #3972B2;
+	opacity: 25%;
 }
